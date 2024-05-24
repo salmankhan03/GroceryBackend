@@ -1,6 +1,6 @@
 <?php
 
-
+use App\Api\Controllers\ProductCategoryController;
 use App\Api\Controllers\ProductController;
 
 use Illuminate\Support\Facades\Route;
@@ -16,4 +16,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::post('product/list', [ProductController::class, 'list']);
+Route::post('product-category/list', [ProductCategoryController::class, 'list']);
 
