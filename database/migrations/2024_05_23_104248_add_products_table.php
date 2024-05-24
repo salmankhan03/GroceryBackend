@@ -18,7 +18,7 @@ return new class extends Migration
             $table->bigInteger('brand_id')->nullable();
             $table->bigInteger('category_id')->nullable();
             $table->text('type')->nullable();
-            $table->text('weight_unit')->default('lbs');
+            $table->string('weight_unit')->default('lbs');
             $table->decimal('weight')->nullable();
             $table->decimal('price')->nullable();
 
